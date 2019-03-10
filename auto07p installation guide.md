@@ -1,7 +1,9 @@
 # Auto07p installation
 
 Auto07p requires Python 2.7, a Fortran 95 compiler, and the auto07p source code.
-* Python: auto07p requires Python 2.7 with Matplotlib 1.5.3 (higher versions of Matplotlib will _not_ work) and Numpy. It is easiest to use [Anaconda](https://www.anaconda.com), a free package manager that can be used to install and switch between different python installations on Linux, Mac, and Windows. If Anaconda is installed, use the terminal command
+
+## Installing python, gfortran, and auto07p
+* Python 2.7: auto07p requires Matplotlib 1.5.3 (higher versions of Matplotlib will _not_ work) and Numpy. It is easiest to use [Anaconda](https://www.anaconda.com), a free package manager that can be used to install and switch between different python installations on Linux, Mac, and Windows. If Anaconda is installed, use the terminal command
 
      ```conda create -n python_for_auto python=2.7 matplotlib=1.5.3 numpy```
 
