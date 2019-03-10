@@ -20,9 +20,9 @@ Auto07p requires Python 2.7, a Fortran 95 compiler, and the auto07p source code.
         * Open a terminal (in /Applications/Utilities) and type ```make```. If an alert pops up about missing command line tools, follow the instructions in the alert.
         * Install auto07p following the instructions on page 11 of the auto07p manual.
     * Windows: Use one of the following instructions.
-        * Download [Massimiliano Grosso's installation guide](http://people.unica.it/massimilianogrosso/auto-on-windows/) and follow the instructions there.
-        * Install Ubuntu under Windows and follow the instructions for Linux above.
-        * Proceed as follows:
+        1. Download [Massimiliano Grosso's installation guide](http://people.unica.it/massimilianogrosso/auto-on-windows/) and follow the instructions there.
+        1. Install Ubuntu under Windows and follow the instructions for Linux above.
+        1. Proceed as follows:
             * Install MinGW, including msys, msys-base, gcc, and gfortran. The msys shell can be found in ```C:\MinGW\msys\1.0\msys.bat``` and the home directory is located in ```C:\MinGW\msys\1.0\home```.
             * Add the path ```C:\MinGW\bin``` to the user environment variables under ```MyComputer:Advanced Tab``` using the ```PATH``` variable.
             * Configure and compile auto07p.
