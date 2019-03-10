@@ -9,8 +9,7 @@ Auto07p requires Python 2.7, a Fortran 95 compiler, and the auto07p source code.
 
      ```conda activate python_for_auto```
 * gfortran: gfortran binaries for Linux, Mac, and Windows can be downloaded from (http://gcc.gnu.org/wiki/GFortran).
-* Download the [auto07p source code and manual](http://sourceforge.net/projects/auto-07p/files/Auto07p/).
-Continue with the steps below for your specific operating system.
+* Download the [auto07p source code and manual](http://sourceforge.net/projects/auto-07p/files/Auto07p/) and continue with the steps below for your specific operating system.
 
 ## Linux
 Follow the instruction on pages 12-13 of the auto07p manual
