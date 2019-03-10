@@ -31,7 +31,7 @@ Auto07p requires Python 2.7, a Fortran 95 compiler, and the auto07p source code.
 ## Auto07p tutorial for the computation of spatial patterns
 
 This tutorial provides an introduction to computing spatial patterns using auto07p. The tutorial was developed by [David Lloyd](http://personal.maths.surrey.ac.uk/st/D.J.Lloyd/David_Lloyd/Welcome.html) and [Bjorn Sandstede](http://www.dam.brown.edu/people/sandsted) for the mini-course _Using AUTO for Stability Problems_, which ran as part of the workshop [Stability of coherent structures and patterns](http://depts.washington.edu/bdecon/workshop2012/) that was held during 11-12 June 2012 at the University of Washington in Seattle.
-* Download the [courses notes in PDF format](auto07p_tutorial_spatial_pattern_formation.pdf)
+* Download the [course notes in PDF format](auto07p_tutorial_spatial_pattern_formation.pdf)
 * Download the [source code and documentation as a zip archive](auto07p_tutorial_spatial_pattern_formation.zip)
 
 ## HomCont
