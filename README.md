@@ -26,7 +26,7 @@ Auto07p requires Python 2.7, a Fortran 95 compiler, and the auto07p source code.
             * Install MinGW, including msys, msys-base, gcc, and gfortran. The msys shell can be found in ```C:\MinGW\msys\1.0\msys.bat``` and the home directory is located in ```C:\MinGW\msys\1.0\home```.
             * Add the path ```C:\MinGW\bin``` to the user environment variables under ```MyComputer:Advanced Tab``` using the ```PATH``` variable.
             * Configure and compile auto07p.
-            * Download a text editor such as [vim](http:vim.org).
+            * Download a text editor such as [vim](http://www.vim.org).
 
 ## Auto07p tutorial for the computation of spatial patterns
 
@@ -36,4 +36,4 @@ This tutorial provides an introduction to computing spatial patterns using auto0
 
 ## HomCont
 
-HomCont, developed by [Alan Champneys](http://www.enm.bris.ac.uk/anm/staff/arc.html) (University of Bristol), [Yuri A Kuznetsov](http://www.math.uu.nl/people/kuznet) (Utrecht University), and [Bjkorn Sandstede](http://www.dam.brown.edu/people/sandsted) (Brown University), is a numerical toolbox for homoclinic bifurcation analysis designed for use with AUTO. HomCont deals with continuation of codimension-one heteroclinic and homoclinic orbits to hyperbolic and saddle-node equilibria, including the detection of many codimension-two singularities and the continuation of these singularities in three or more parameters. HomCont has been incorporated into AUTO and [XPP](http://www.math.pitt.edu/~bard/xpp/xpp.html).
+HomCont, developed by [Alan Champneys](http://www.enm.bris.ac.uk/anm/staff/arc.html) (University of Bristol), [Yuri A Kuznetsov](http://www.math.uu.nl/people/kuznet) (Utrecht University), and [Bjorn Sandstede](http://www.dam.brown.edu/people/sandsted) (Brown University), is a numerical toolbox for homoclinic bifurcation analysis designed for use with AUTO. HomCont deals with continuation of codimension-one heteroclinic and homoclinic orbits to hyperbolic and saddle-node equilibria, including the detection of many codimension-two singularities and the continuation of these singularities in three or more parameters. HomCont has been incorporated into AUTO and [XPP](http://www.math.pitt.edu/~bard/xpp/xpp.html).
