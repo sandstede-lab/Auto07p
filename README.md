@@ -2,6 +2,8 @@
 
 [AUTO](http://cmvl.cs.concordia.ca/auto/) is a versatile continuation package for solving boundary-value problems written by [Eusebius Doedel](http://users.encs.concordia.ca/~doedel/) and his collaborators.
 
+I collated [instructions for installing auto07p](auto07p installation guide.md).
+
 ## Auto07p tutorial for the computation of spatial patterns
 
 This tutorial provides an introduction to computing spatial patterns using auto07p. The tutorial was developed by [David Lloyd](http://personal.maths.surrey.ac.uk/st/D.J.Lloyd/David_Lloyd/Welcome.html) and [Bjorn Sandstede](http://www.dam.brown.edu/people/sandsted) for the mini-course _Using AUTO for Stability Problems_, which ran as part of the workshop [Stability of coherent structures and patterns](http://depts.washington.edu/bdecon/workshop2012/) that was held during 11-12 June 2012 at the University of Washington in Seattle.
