@@ -1,8 +1,6 @@
 # Auto07p
 
-[AUTO](http://cmvl.cs.concordia.ca/auto/) is a versatile continuation package for solving boundary-value problems written by [Eusebius Doedel](http://users.encs.concordia.ca/~doedel/) and his collaborators.
-
-Please refer to the [installation instructions for auto07p](auto07p_installation_guide.md) for my notes on installing AUTO.
+[AUTO](http://cmvl.cs.concordia.ca/auto/) is a versatile continuation package for solving boundary-value problems written by [Eusebius Doedel](http://users.encs.concordia.ca/~doedel/) and his collaborators. Please refer to the [installation instructions for auto07p](auto07p_installation_guide.md) for my notes on installing AUTO.
 
 ## Auto07p tutorial for the computation of spatial patterns
 
