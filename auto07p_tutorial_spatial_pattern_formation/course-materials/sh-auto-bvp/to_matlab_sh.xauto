@@ -1,0 +1,29 @@
+#
+#   autox to_matlab_sh.xauto run run
+#
+
+# In expert scripts we need to explicitly import the AUTOclui library
+from AUTOclui import *
+
+# We also import a few general Python utility libraries.
+import sys
+
+# This function actually performs the decoding of the AUTO data files.
+def to_matlab(filename,prefix):
+    data=loadbd(filename)
+    data.writeRawFilename(prefix+'_bifur')
+    
+    data=data()
+    outputfile = open(prefix+'_label','w')
+    for solution in data:
+        outputfile.write(str(solution['LAB']))
+        outputfile.write(' ')
+        outputfile.write(str(solution['PAR(1)']))
+        outputfile.write('\n')
+        solution.writeRawFilename(prefix+'_solution_'+`solution["Label"]`)
+
+# This is the Python syntax for making a script runnable    
+if __name__ == '__main__':
+    filename = sys.argv[1]
+    prefix = sys.argv[2]
+    to_matlab(filename,prefix)

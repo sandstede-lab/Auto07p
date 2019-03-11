@@ -1,0 +1,4 @@
+*
+* this file must be called `param.in'
+*
+	PARAMETER (NX=300)

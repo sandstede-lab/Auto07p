@@ -1,0 +1,129 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt]{article}
+
+\usepackage{amsmath, amssymb, graphicx, paralist}
+\usepackage[letterpaper,text={7in,9.75in},centering]{geometry}
+
+%	layout
+
+\pagestyle{empty}
+\setlength{\parskip}{1.0ex plus0.2ex minus0.2ex}
+\setlength{\parindent}{0.0in}
+\renewcommand{\baselinestretch}{1.2}
+
+%	definitions
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\rmd}{\mathrm{d}}
+\newcommand{\rmD}{\mathrm{D}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\subsubsection*{\centerline{AUTO-07P projects}}
+\underline{\hspace*{\textwidth}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The following three sample projects could be pursued by participants:
+\begin{compactitem}
+\item Demo pp2: if you would like to use prepared \textsc{auto} files, try this demo to continue equilibria of the planar ODE, locate and continue saddle-node and Hopf bifurcations, and continue periodic orbits.
+\item Compute a circle using continuation: this problem allows you to implement an algebraic problem in \textsc{auto}.
+\item Compute and continue a pulse solution: this project is about the computation of travelling waves in \textsc{auto} via a boundary-value-problem formulation. Starting data come from an explicit solution. 
+\end{compactitem}
+Other sample project are listed on the following page.
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Predator-prey model:}
+Consider the predator-prey model
+\[
+\dot{u} = bu(1-u) - uv - a(1-\mathrm{e}^{-cu}), \qquad
+\dot{v} = -v + duv
+\]
+where $u,v\geq0$ and $a,b,c,d>0$. This system is used for the \textsc{auto} demo \texttt{pp2} for which details are  given in the \textsc{auto} manual. The code is set up in the directory \texttt{auto-pp2-demo}: go to this directory and follow the commands outlined in the \texttt{README} file.
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Compute a circle with} \textsc{auto}:
+Trace out the circle $x^2+y^2=1$ numerically with \textsc{auto} using continuation. The solution can be found in the directory \texttt{auto-circle}.
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Pulses in a bistable partial differential equation:}
+Consider the bistable PDE
+\[
+u_t = u_{xx} - u + a u^3, \qquad x\in\R,
+\]
+which admits the standing pulse solution $u(x,t)=\sqrt{2}\,\mathrm{sech}(x)$ when $a=1$. Compute and continue these pulses numerically in \textsc{auto} starting from the exact solution. Experiment with using different truncation intervals and different values of \textsc{ntst}. The solution can be found in the directory \texttt{auto-bistable}.
+
+\underline{\hspace*{\textwidth}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\subsubsection*{\centerline{Other AUTO-07P projects}}
+\underline{\hspace*{\textwidth}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Computation of real eigenvalues:}
+Take your favorite $n\times n$ matrix $A$ and determine its real eigenvalues numerically with \textsc{auto} via continuation:
+\begin{compactitem}
+\item \textsc{auto}: solve the algebraic system $(A-\lambda)v=0$ for $v$ by continuation in $\lambda\in\R$ with starting data $(v,\lambda)=0$. Enable detection of branch points. What do you find?
+\item Theory: investigate why this algorithm works.
+\end{compactitem}
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Hopf bifurcations and branch switching:}
+Consider the Brusselator
+\[
+\dot{u} = a - (b+1)u + u^2 v, \qquad
+\dot{v} = bu - u^2 v
+\]
+where $u,v\geq0$ and $a,b>0$. This system has the unique equilibrium $(u,v)=(a,b/a)$.
+\begin{compactitem}
+\item \textsc{auto}: continue the equilibrium numerically and investigate its Hopf bifurcations. Trace out the curve of Hopf bifurcations in $(a,b)$-space, and compute the periodic orbits that bifurcate from the equilibrium. Check \texttt{fort.9} to see whether the periodic orbits are stable or unstable.
+\item Theory: compare the location of the Hopf bifurcation curve in $(a,b)$-space with the theoretical prediction.
+\end{compactitem}
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Pitchfork bifurcations and branch switching:}
+Consider the second-order equation
+\[
+\ddot{u} = \sin(u) \left[ \cos(u) - \frac{1}{\gamma} \right]
+\]
+that describes a bead that slides on a wire hoop. This system has the equilibrium $u=0$ for all values of $\gamma$. Investigate its bifurcations numerically using \textsc{auto}: branch switch onto any bifurcating solutions by (i) using the branch switching algorithm built into \textsc{auto} and (ii) adding a symmetry-breaking term.
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Fronts in the Nagumo equation:}
+Consider the Nagumo PDE
+\[
+u_t = u_{xx} + u(u-a)(1-u), \qquad x\in\R,
+\]
+which admits the travelling fronts $u(x,t)=1+\tanh((x+ct)/2)$ with $c=(1-2a)/\sqrt{2}$ for $0<a<1$. Compute and continue these fronts numerically in \textsc{auto} starting from the exact solution. Experiment with using different truncation intervals and different values of \textsc{ntst}.
+
+\underline{\hspace*{\textwidth}}
+
+\textbf{Finite-difference approximations of PDEs:}
+Consider the Nagumo PDE
+\[
+u_t = u_{xx} - cu_x + u(u-a)(1-u)
+\]
+in a moving coordinate frame on a large interval $(-L,L)$ with Dirichlet boundary conditions at $x=\pm L$. Discretize this PDE in space using centered finite differences and implement the resulting large algebraic system in \textsc{auto}. Using appropriate values of $L$ and the step size (you need to experiment), find the travelling waves $u(x)=1+\tanh(x/2)$ with $c=(1-2a)/\sqrt{2}$ in \textsc{auto} and determine the stability of the front by checking \texttt{fort.9}. Plot the solution profiles in \textsc{matlab} and compare them with the exact solution.
+
+\underline{\hspace*{\textwidth}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
