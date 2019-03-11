@@ -1,0 +1,55 @@
+
+-----------------------------------------------------------------------
+
+This read me file describes the format for the AUTO output files
+	- fort.9
+	- s.xyz
+
+-----------------------------------------------------------------------
+
+				fort.8 or s.xyz
+
+first identifying line:
+
+      ibr   :	  the index of the branch
+      ntot  :	  the index of the point
+      itp   :	  the type of point
+      lab   :	  the label of the point
+      nfpr  :	  the number of free parameters used in the computation
+      isw   :	  the value of isw used in the computation
+      ntpl  :	  the number of points in the time interval [0,1]
+		          for which solution data are written
+      nar   :	  the number of values written per point
+		          (nar=ndim+1, since t and u(i), i=1,..,ndim are written)
+      nrowpr:	  the number of lines printed following the identifying line
+		          and before the next data set or the end of the file
+		          (used for quickly skipping a data set when searching)
+      ntst  :	  the number of time intervals used in the discretization
+      ncol  :	  the number of collocation points used
+      nparx :	  the dimension of the array par
+
+following this are ntpl lines containing
+      t u_1(t) u_2(t) ... u_ndim(t)
+
+following this is a line containing the indices of the free parameters
+      icp(i) for i=1,...,nfpr
+
+followed by a line containing the derivative of parameters wrt arclength
+      rl_dot(i) for i=1,...,nfpr
+
+following this are ntpl lines containing the derivative of the solution wrt arclength
+      u_dot_1(t) u_dot_2(t) ... u_dot_ndim(t)
+
+followed by the parameter values 
+      par(i) for i=1,...,nparx
+
+-----------------------------------------------------------------------
+
+				fort.9 or d.xyz
+
+Residuals of reduced system:
+	NDIM differential equations, NBC boundary conditions,
+		NINT integral conditions, pseudo-arclength condition
+
+-----------------------------------------------------------------------
+
