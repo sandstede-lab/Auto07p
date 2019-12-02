@@ -2,7 +2,7 @@
 
 [AUTO](http://cmvl.cs.concordia.ca/auto/) is a versatile continuation package for solving boundary-value problems written by [Eusebius Doedel](http://users.encs.concordia.ca/~doedel/) and his collaborators.
 
-* News: [Auto07p is now on Github](https://github.com/auto-07p/auto-07p/releases/tag/v0.9.2). The newly released version 0.9.2 supports Python 3.
+* News: [Auto07p](https://github.com/auto-07p/) is on Github. [Version 0.9.2](https://github.com/auto-07p/auto-07p/releases/tag/v0.9.2) supports Python 3.
 * Installation: Please refer to the [installation instructions for auto07p](auto07p_installation_guide.md) for my notes on installing AUTO.
 * Documentation: Two files explaining the format of the auto07p output and its equations files are posted in the folder [auto07p_documentation](auto07p_documentation/).
 
