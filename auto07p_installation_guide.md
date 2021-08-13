@@ -17,7 +17,6 @@ Follow the instruction on pages 12-13 of the auto07p manual
 
 ## Windows
 Use one of the following instructions.
-* Download [Massimiliano Grosso's installation guide](http://people.unica.it/massimilianogrosso/auto-on-windows/) and follow the instructions there.
 * Install Ubuntu under Windows and follow the instructions for Linux above.
 * Proceed as follows:
   * Install MinGW, including msys, msys-base, gcc, and gfortran. The msys shell can be found in ```C:\MinGW\msys\1.0\msys.bat``` and the home directory is located in ```C:\MinGW\msys\1.0\home```.
